@@ -9,7 +9,7 @@ Marisalt/
 ├── Engine/
 │   ├── Input/
 │   ├── Renderer/
-│   └── Utilities/
+│   └── Window/
 ├── glad/
 │   ├── include/
 │   └── src/
@@ -19,14 +19,14 @@ Marisalt/
 
 ## Technologies
 
-- OpenGL: Graphics API for rendering 2D and 3D graphics
+- OpenGL: Graphics API for rendering 3D graphics
 - GLFW: Multi-platform library for creating windows with OpenGL contexts
 - Glad: OpenGL Loading Library
 
 ## Getting Started
 
 1. Clone the repository
-2. Ensure you have CMake installed
+2. Ensure you have CMake, GLFW, installed
 3. Build the project using CMake
 4. Run the executable
 

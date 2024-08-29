@@ -10,10 +10,15 @@ find_package(glfw3 REQUIRED)
 add_library(glad
         ${CMAKE_CURRENT_SOURCE_DIR}/glad/src/glad.c
         ${CMAKE_CURRENT_SOURCE_DIR}/glad/include/glad/glad.h
+
 )
 target_include_directories(glad PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/glad/include)
 
-add_executable(Marisalt main.cpp)
+add_executable(Marisalt main.cpp
+        Engine/Engine.cpp
+        Engine/Window/Window.cpp
+        Engine/Renderer/Renderer.cpp
+        Engine/Input/Input.cpp)
 
 target_include_directories(Marisalt PRIVATE
         ${OPENGL_INCLUDE_DIR}
