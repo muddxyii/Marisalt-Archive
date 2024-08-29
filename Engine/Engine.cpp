@@ -1,9 +1,4 @@
-//
-// Created by muddxyii on 8/28/24.
-//
-
 #include "Engine.h"
-
 #include <chrono>
 #include <thread>
 
